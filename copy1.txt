@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Mahmoud</title>
+    <link href="home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <button id="mode-toggle" class="toggle-btn">☀️ Light Mode</button>
+        <div id="name">LUIS MAHMOUD DEGACHI</div>
+        <nav id="links">
+        <a href="#about">About</a></div>
+        <a href="#skills">Skills</a></div>
+        <a href="#c&c">Courses & Certifications</a></div>
+        <a href="xxx">Projects</a></div>
+        
+        
+        </nav>
+
+    <div class="social-links">
+
+        
+<a href="https://www.linkedin.com/in/luis-mahmoud-degachi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="https://github.com/Luis-mdegachi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fab fa-github"></i></a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=luismahmouddegachi@gmail.com&su=Contact%20from%20Portfolio&body=Hi%20Luis," target="_blank"
+" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+    </div> 
+    
+    <script>
+  const toggle = document.getElementById("mode-toggle");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+
+    if (document.body.classList.contains("light-mode")) {
+      toggle.textContent = "🌙 Dark Mode";
+    } else {
+      toggle.textContent = "☀️ Light Mode";
+    }
+  });
+</script>
+    </header>
+    <main id="conteudo">
+        <div class="section">
+            <div class="section-text"><h2>Hi! I'm Luis.</h2><br>
+            <p>Multilingual learner on a journey from engineering to data and cloud.</p><br><br>
+            <p>Data Analyst | Cloud Computing | AWS & GOOGLE CLOUD Certified</p>
+        </div>
+        
+            <img src="images/eu.png" class="section-img">
+        
+
+        </div>
+        <div class="section" id="about">
+            <div class="title"><h2>About Me</h2><br></div>
+            <div class="box">
+                <div class="section-text">Graduated in mechanical engineering in Tunisia, I discovered my passion for data during my university capstone project — developing an automated water desalination system. My role involved mapping the system using data modeling language, integrating sensors for pH and volume monitoring with Arduino, and building a full data pipeline: sending real-time data to phpMyAdmin via MQTT, querying it with SQL, and visualizing everything in Node-RED dashboards. I even created a REST API to interface with the system. That project opened my eyes to the power of data — not just as numbers, but as tools for solving real-world problems.</div>
+                <div class="section-text">After relocating to Brazil, I chose to shift my career entirely toward data analytics and cloud computing. I’ve since completed certifications and courses in AWS Cloud (earning the AWS Cloud Practitioner badge), Google Cloud Data Analytics (including BigQuery, SQL, and Looker dashboards), advanced Excel, statistics from Stanford University via Coursera, and data analysis with Python using libraries like Pandas and NumPy.</div>
+                <div class="section-text">I’m now focused on developing practical, real-world projects to build my portfolio. While I’m still exploring which areas excite me the most, I’m particularly drawn to real-time analytics, IoT data, and health-related insights — like understanding how fitness, sleep, or nutrition influence well-being. My goal is to combine technical skills with curiosity and creativity to turn data into meaningful action.</div>
+                <div class="section">
+                <a href="docs/Luis M Degachi_CV_PR_08.pdf" download class="download-btn" target="_blank">Download My CV -Portuguese</a><a href="docs/Luis M Degachi_CV EN 08.pdf" download class="download-btn" target="_blank">Download My CV -English</a>
+                </div>
+            </div>
+        </div>   
+        <div class="section" id="skills">
+            <div class="title"><h2>Skills</h2><br></div>
+            <div class="section">
+                <div class="skill-category">
+                    <button class="skill-btn1" onclick="toggleSkills('mv')">💻 Technical Skills</button>
+                <div class="skill-box hidden mv">
+                    <ul>
+                        <li>Programming & Data Analysis: Python (Pandas, NumPy, Matplotlib, Seaborn), SQL, Jupyter Notebook, Power BI, Looker Studio</li><bR>
+                        <li>Cloud Platforms: AWS (Cloud Practitioner, AWS re/Start), Google Cloud Platform (BigQuery, Cloud Storage)</li><br>
+                        <li>Web Development: HTML, CSS</li><br>
+                        <li>IoT & Automation: Arduino, Node-RED</li>
+                        </ul>
+                </div>
+                </div>
+                <div class="skill-category">
+                    <button class="skill-btn1" onclick="toggleSkills('mx')">🌍 Languages </button>
+                <div class="skill-box hidden mx">
+                    <ul>
+                        <li>Arabic: Native</li><br>
+                        <li>French: Advanced</li><br>
+                        <li>English: Advanced</li><br>
+                        <li>Portuguese: Intermediate</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+      <script>
+        function toggleSkills(tipo) {
+        const box = document.querySelector('.skill-box.' + tipo);
+        box.classList.toggle('hidden');
+        }
+        </script>
+        <div class="section" id="c&c">
+            <div class="title"><h2>Courses & Certifications</h2><br></div>
+            <div class="section">
+            <div class="tit"><h2>Courses</h2></div>
+            <div class="scroll-section">
+            <button class="scroll-btn left" onclick="scrollLeft(this)"><</button>
+       
+        <div class="scroll-container">
+            
+         <div class="courses">
+            <div class="produto">
+                <div class="conteudo1">
+                <div class="titulo">Google Cloud Data Analytics Professional Certificate</div>
+                <div class="issuer"> Google</div>
+                <div class="description">Gained practical experience in SQL, BigQuery, data visualization, and cloud-based analytics for business decision-making.</div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="conteudo1">
+                <div class="titulo">Fundamentals of Python for Data Analysis & Data Science</div>
+                <div class="issuer">Data Science Academy</div>
+                <div class="description">Learned Python programming applied to data analysis, covering data structures, control flow, NumPy, Pandas, and data visualization with Matplotlib and Seaborn.</div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="conteudo1">
+                <div class="titulo">Front-End Developer</div>
+                <div class="issuer">SENAI</div>
+                <div class="description">Developed skills in HTML, CSS, and JavaScript through hands-on projects, building a variety of web pages to practice and apply front-end concepts.</div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="conteudo1">
+                <div class="titulo">Introduction to Statistics</div>
+                <div class="issuer">Stanford University / Coursera</div>
+                <div class="description">Gained expertise in key statistical concepts including descriptive statistics, sampling techniques, regression, categorical data analysis,and ANOVA; Foundational skills for data-driven analysis and decision-making.</div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="conteudo1">
+                <div class="titulo">Excel-Advanced</div>
+                <div class="issuer">SENAC</div>
+                <div class="description">Learned Excel Functions for collecting, formatting and extracting Data.</div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="conteudo1">
+                <div class="titulo">Introduction to Data Science</div>
+                <div class="issuer">CISCO</div>
+                <div class="description">Formed a base of understanding Data's different roles and the process of Data analytics.</div>
+                </div>
+            </div>
+            
+            
+            </div>
+
+        </div>
+         <button class="scroll-btn right" onclick="scrollRight(this)">></button>
+        </div>
+       <script>
+        const scrollContainers = document.querySelectorAll('.scroll-section');
+
+  scrollContainers.forEach(container => {
+    const courses = container.querySelector('.scroll-container .courses');
+    const btnLeft = container.querySelector('.scroll-btn.left');
+    const btnRight = container.querySelector('.scroll-btn.right');
+   
+
+   
+  
+let scrollAmount;
+
+// Set scrollAmount depending on screen size
+function updateScrollAmount() {
+  if (window.innerWidth <= 600) { 
+    // small screens (adjust breakpoint)
+    scrollAmount = 250; // example: width of 1 card
+  } else if (window.innerWidth <= 1024) {
+    // medium screens
+    scrollAmount = 420; 
+  } else {
+    // large screens
+    scrollAmount = 930; // your default value
+  }
+}
+
+// Call it once on page load
+updateScrollAmount();
+
+// Update if window resizes
+window.addEventListener("resize", updateScrollAmount);
+
+ btnRight.addEventListener('click', () => {
+      courses.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    btnLeft.addEventListener('click', () => {
+      courses.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+    });
+
+
+       </script>
+      
+
+
+    </main>
+    
+</body>
+</html>
